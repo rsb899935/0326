@@ -1,13 +1,22 @@
-Version: 1.0
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+library(datasets)
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
+head(iris)
+str(iris)
+tail(iris)
+dim(iris)
+#
+plot(iris)
+plot(iris$Species)
+plot(iris$Petal.Length)
+plot(iris$Petal.Length,iris$Petal.Width)
+plot(iris$Species,iris$Petal.Width)
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+#
+plot(iris$Petal.Length,iris$Petal.Width,
+     col="#cc0000",
+     pch=19,
+     main = "iris:petal length vs. petal width",
+     xlab = "petal length",
+     ylab = "petal width",)
+
