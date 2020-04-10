@@ -1,0 +1,22 @@
+
+library(datasets)
+
+head(iris)
+str(iris)
+tail(iris)
+dim(iris)
+#
+plot(iris)
+plot(iris$Species)
+plot(iris$Petal.Length)
+plot(iris$Petal.Length,iris$Petal.Width)
+plot(iris$Species,iris$Petal.Width)
+
+#
+plot(iris$Petal.Length,iris$Petal.Width,
+     col="#cc0000",
+     pch=19,
+     main = "iris:petal length vs. petal width",
+     xlab = "petal length",
+     ylab = "petal width",)
+
